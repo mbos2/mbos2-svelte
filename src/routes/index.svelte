@@ -4,6 +4,8 @@
 	import LogoArea from '$components/LogoArea.svelte';
 	import layout from './_layout.svelte';
 
+	import { fade } from 'svelte/transition';
+
 	import {currentComponent} from '$components/services/routing';
 
 	let c = Object;
@@ -31,7 +33,7 @@
 .Side {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 60% 15%;
+  grid-template-rows: 20% 65% 15%;
   grid-template-areas:
     "Logo"
     "Bar"

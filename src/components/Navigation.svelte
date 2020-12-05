@@ -286,5 +286,5 @@ a {
       <i class="{route.iconClass}"></i>
     </a>       
   {/each} 
-  <a class="menu-item col6"><i class="fab fa-github"></i></a>
+  <a href="https://github.com/mbos2" target="blank" class="menu-item col6"><i class="fab fa-github"></i></a>
 </nav>
