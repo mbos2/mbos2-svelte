@@ -1,4 +1,1 @@
-<script>
-    
-</script>
-About
+About Component

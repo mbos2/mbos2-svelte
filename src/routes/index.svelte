@@ -1,6 +1,7 @@
 <script>	
 	import Navigation from '$components/Navigation.svelte';
 	import Footer from '$components/Footer.svelte';
+	import LogoArea from '$components/LogoArea.svelte';
 	import layout from './_layout.svelte';
 
 	import {currentComponent} from '$components/services/routing';
@@ -13,45 +14,49 @@
 </script>
 
 <style>
-.itemNavigation {
-	grid-area: header; 
-	grid-row: 1;
+.grid-container {
+	display: grid;
+	height: 100vh;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+	"Side Main";
+  gap: 1%;
 }
-.itemMain { 
-	grid-area: main; 
-	grid-row: 2;
+.Main { 
+	grid-area: Main; 
+	background-color:  rgba(187,225,250,0.1);
 }
-.itemFooter { 
-	grid-area: footer; 	
-	grid-row: 3;	
-	text-align: center;	
+.Side {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 60% 15%;
+  grid-template-areas:
+    "Logo"
+    "Bar"
+	"Footer";	
+  grid-area: Side;
+  background-color:  rgba(187,225,250,0.1);
 }
-.grid-container {  	
-	display: grid;		
-	grid-template-columns: 100%;
-	grid-template-rows: 10% 85% 5%;
-	grid-template-areas: 
-    "header"
-    "main"
-	"footer";
-	height: 99.9vh;	
-	margin: auto;	
-}
-
-.grid-container > div {  
-  padding: 20px 0; 
-}
+.Logo { grid-area: Logo;}
+.Bar { grid-area: Bar; }
+.Footer { grid-area: Footer;}
 </style>
 
-<div class="container mx-auto px-1 grid-container">
-
-	<!-- <div class="itemNavigation"><Navigation /></div> -->
-
-	<div class="itemMain">	
+<div class="grid-container">
+	<div class="Main">
 		<svelte:component this={c.component}/>
-	</div>	
-	<div class="itemFooter">
-		<Footer/>
 	</div>
-
+	<div class="Side">
+	  <div class="Logo">
+		<LogoArea />
+	  </div>
+	  <div class="Bar flex flex-wrap content-center justify-center">
+		<Navigation />
+	  </div>
+	  <div class="Footer flex items-center">
+		<Footer />
+	  </div>
+	</div>
 </div>
