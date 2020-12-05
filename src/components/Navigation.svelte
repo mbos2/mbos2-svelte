@@ -1,10 +1,11 @@
 <script>
-    import {currentComponent} from './services/routing';
-    import About from '$components/About.svelte';
-	  import Blog from '$components/Blog.svelte';
-	  import Projects from '$components/Projects.svelte';
-    import Home from '$components/Home.svelte';
-    import Contact from '$components/Contact.svelte';
+   import {currentComponent} from './services/routing';
+   import About from '$components/About.svelte';
+	import Blog from '$components/Blog.svelte';
+	import Projects from '$components/Projects.svelte';
+   import Home from '$components/Home.svelte';
+   import Contact from '$components/Contact.svelte';
+
     let routes = [    
         {
             id: 1,
@@ -208,9 +209,14 @@ a {
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.col1:hover {
+/* .col1:hover {
    color: #24BCFC;
    text-shadow: none;
+} */
+
+.col1:hover .fa-home:before {
+   content:"Home";
+   color:#24BCFC;  
 }
 
 .col2 {
@@ -219,9 +225,14 @@ a {
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.col2:hover {
+/* .col2:hover {
    color: #FF3A3D;
    text-shadow: none;
+} */
+
+.col2:hover .fa-address-card:before {
+   content:"About";
+   color:#FF3A3D;  
 }
 
 .col3 {
@@ -230,9 +241,14 @@ a {
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.col3:hover {
+/* .col3:hover {
    color: #FFC431;
    text-shadow: none;
+} */
+
+.col3:hover .fa-tasks:before {
+   content:"Work";
+   color:#FFC431;  
 }
 
 .col4 {
@@ -241,9 +257,14 @@ a {
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.col4:hover {
+/* .col4:hover {
    color: #FF670C;
    text-shadow: none;
+} */
+
+.col4:hover .fa-rss:before {
+   content:"Blog";
+   color:#FF670C;  
 }
 
 .col5 {
@@ -252,20 +273,25 @@ a {
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.col5:hover {
+/* .col5:hover {
    color: #35FFD6;
    text-shadow: none;
+} */
+
+.col5:hover .fa-envelope-square:before {
+   content:"Mail";
+   color:#35FFD6;  
 }
 
 .col6 {
-   background-color: #0340D0;
+   background-color: #000;
    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.col6:hover {
-   color: #0340D0;
-   text-shadow: none;
+.col6:hover{
+   color: #000;
+   text-shadow: none;      
 }
 
 @media screen and (max-width: 700px) {
