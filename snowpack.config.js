@@ -24,6 +24,7 @@ module.exports = {
     /* ... */
   },
   alias: {
+    "@frontend": "./frontend/",
     "@components": "./frontend/components/"    
   },
 };

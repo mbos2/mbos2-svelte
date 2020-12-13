@@ -1,5 +1,4 @@
 <script lang='typescript'>
-	// import './main.css';
 	import Tailwindcss from './Tailwindcss.svelte';
 	import Sidebar from '@components/global/Sidebar.svelte';
 	import Main from '@components/global/Main.svelte';
@@ -10,10 +9,15 @@
 		color: red;
 	}
 
-	.bd {
-		border: 1px solid red;
+	.testSidebar {
+		background-color: cornflowerblue;
+	}
+	.testMain {
+		background-color: burlywood;
 	}
 </style>
 
-<!-- <Sidebar />
-<Main /> -->
+<div class="flex flex-col md:flex-row">
+	<Sidebar testClass="testSidebar"/>
+	<Main testClass="testMain"/>
+</div>
