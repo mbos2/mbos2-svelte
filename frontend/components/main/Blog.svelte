@@ -1,1 +1,1 @@
-BLOG
+<h1 class="bd">BLOG</h1>

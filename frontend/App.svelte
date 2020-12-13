@@ -1,8 +1,8 @@
 <script lang='typescript'>
-	import { scale } from 'svelte/transition';
-	import {Route} from 'tinro';	
-    import {mainRoutes} from '@components/routing/routes';
-	import Navigation from '@components/global/Navigation.svelte';
+	// import './main.css';
+	import Tailwindcss from './Tailwindcss.svelte';
+	import Sidebar from '@components/global/Sidebar.svelte';
+	import Main from '@components/global/Main.svelte';
 </script>  
 
 <style global>
@@ -15,13 +15,5 @@
 	}
 </style>
 
-<Navigation />
-<div class="a">
-	{#each mainRoutes as route }		
-		<Route path="{route.url}">	
-			<div in:scale="{{ duration: 2000}}" out:scale="{{duration: 2000 }}">
-				<svelte:component this={route.component} />	
-			</div>
-		</Route>	
-	{/each}
-</div>
+<!-- <Sidebar />
+<Main /> -->
