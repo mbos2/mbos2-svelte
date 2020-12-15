@@ -58,4 +58,8 @@ declare module '*.png' {
 
 /* CUSTOM: ADD YOUR OWN HERE */
 
+declare module '@frontend/*';
 declare module '@components/*';
+declare module '@routing/*';
+declare module '@global/*';
+declare module '@main/*';

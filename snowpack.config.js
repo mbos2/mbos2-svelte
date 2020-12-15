@@ -25,6 +25,9 @@ module.exports = {
   },
   alias: {
     "@frontend": "./frontend/",
-    "@components": "./frontend/components/"    
+    "@components": "./frontend/components/",
+    "@routing": "./frontend/routing/",
+    "@global": "./frontend/components/global/",
+    "@main": "./frontend/components/main/"
   },
 };

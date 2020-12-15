@@ -1,23 +1,19 @@
 <script lang='typescript'>
 	import Tailwindcss from './Tailwindcss.svelte';
-	import Sidebar from '@components/global/Sidebar.svelte';
-	import Main from '@components/global/Main.svelte';
+	import Sidebar from '@global/Sidebar.svelte';
+	import Main from '@global/Main.svelte';
 </script>  
 
 <style global>
-	h1 {
-		color: red;
-	}
-
 	.testSidebar {
 		background-color: cornflowerblue;
 	}
 	.testMain {
-		background-color: burlywood;
+		background-color: burlywood;	
 	}
 </style>
 
-<div class="flex flex-col md:flex-row">
-	<Sidebar testClass="testSidebar"/>
+<section class="flex h-screen flex-col md:flex md:flex-row-reverse">
 	<Main testClass="testMain"/>
-</div>
+	<Sidebar testClass="testSidebar"/>
+</section>
