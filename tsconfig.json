@@ -2,6 +2,7 @@
   "include": ["frontend", "types"],
   "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {    
+    "types": ["node"],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",

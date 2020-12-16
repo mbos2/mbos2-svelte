@@ -1,26 +1,27 @@
 <script lang="ts">
     import Navigation from '@global/Navigation.svelte';
     import ImageComponent from '@global/ImageComponent.svelte';
-    import Footer from '@global/Footer.svelte';
-    export let testClass;
-
+    import Footer from '@global/Footer.svelte';   
+ 
+    //Navigation
     let buttonContent = '<i class="fas fa-bars"></i>';  
     let openClass = 'closed';
 
-    function closeNavigation(event) {
-      openClass = event.detail.text;
-    }
-    
-    const toggleNav = () => {
-      if(openClass == 'closed') {       
-        openClass = 'open';
-        buttonContent = '<i class="fas fa-times"></i>';        
-        return;
-      } 
-     
+    function toggleNavigation (event)  {
+      if(event.type == 'urlClick') {
+        openClass = event.detail.text; 
+        buttonContent ='<i class="fas fa-times"></i>';   
+      } else {
+          if(openClass == 'closed') {       
+          openClass = 'open';
+          buttonContent = '<i class="fas fa-times"></i>';        
+          return;
+        } 
+      }
       openClass = 'closed';   
-      buttonContent = '<i class="fas fa-bars"></i>';   
+      buttonContent = '<i class="fas fa-bars"></i>';  
     }
+
 </script>
 <style>  
   @media (max-width: 767px) { 
@@ -33,21 +34,32 @@
       transition: transform .3s;       
     }
   }
-
-  .b {
-    background-color: cadetblue;
-    color:red;
+  @media (min-width: 768px) {
+    .sidebar {
+      -webkit-box-shadow: 5px 0px 4px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 5px 0px 4px 0px rgba(0,0,0,0.75);
+      box-shadow: 5px 0px 4px 0px rgba(0,0,0,0.75);
+    }
+  }
+  .sidebar {
+    background-color: #293241;
+    /* color: #80CCFF; */
   }
   button {      
     font-size:40px;
   }
 </style>
 
-<section class="flex flex-col w-4/5 h-full absolute z-10
-            md:relative md:w-1/5 md:z-0
-            {testClass} {openClass} ">
+<section class="sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-sidebar-light
+            sm:shadow-none
+            md:relative md:w-2/6 md:shadow-md md:font-semibold
+            lg:w-2/6
+            xl:w-1/6
+            {openClass} ">
   <ImageComponent />
-  <Navigation on:urlClick={closeNavigation}/>    
+  <Navigation on:urlClick={toggleNavigation}/>    
   <Footer /> 
 </section>
-<button class="flex md:hidden z-20 absolute right-5 top-4" on:click="{toggleNav}">{@html buttonContent}</button>
+<button class="flex z-20 absolute right-5 top-4 p-1
+              md:hidden" 
+on:click="{toggleNavigation}">{@html buttonContent}</button>

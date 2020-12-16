@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     '@snowpack/plugin-svelte',
-    '@snowpack/plugin-dotenv'
+    '@snowpack/plugin-dotenv' 
   ],
   install: [
     /* ... */
@@ -28,6 +28,7 @@ module.exports = {
     "@components": "./frontend/components/",
     "@routing": "./frontend/routing/",
     "@global": "./frontend/components/global/",
-    "@main": "./frontend/components/main/"
+    "@main": "./frontend/components/main/",
+    "@services": "./frontend/services/"
   },
 };

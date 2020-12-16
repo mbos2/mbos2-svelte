@@ -4,7 +4,9 @@
 <style>
 
 </style>
-<section class="flex text-sm md:text-md lg:text-lg bottom-0 h-1/5 text-center justify-center items-center">
+<section class="flex text-xs bottom-0 h-1/5 text-center justify-center items-center
+                lg:text-md"
+>
     <footer class="">
         <p>© 2020 - <a href="https://github.com/mbos2" target="_blank">mbos2</a> - All Rights Reserved </p>
         <p> Made with special care </p>

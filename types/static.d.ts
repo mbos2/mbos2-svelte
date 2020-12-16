@@ -63,3 +63,4 @@ declare module '@components/*';
 declare module '@routing/*';
 declare module '@global/*';
 declare module '@main/*';
+declare module '@services/*';
