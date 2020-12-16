@@ -33,11 +33,20 @@
 </script>
 <style>
 	.anchor {
-		border:2px solid #99d6ff;;
+		border:2px solid #99d6ff;
+		transition: box-shadow 0.1s;
+	}
+	.anchor:hover {
+		-webkit-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
+		-moz-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
+		box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 	}
 	.active {
 		background-color: #80CCFF;
-		color: #293241;		
+		color: #293241;	
+		transition: 0.3s;
+	}
+	.active:focus {
 		-webkit-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 		-moz-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 		box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
