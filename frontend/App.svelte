@@ -5,15 +5,10 @@
 </script>  
 
 <style global>
-	.testSidebar {
-		background-color: cornflowerblue;
-	}
-	.testMain {
-		background-color: burlywood;	
-	}
+
 </style>
 
-<section class="flex h-screen flex-col md:flex md:flex-row-reverse">
+<section class="flex h-screen flex-col md:flex md:flex-row-reverse">	
 	<Main />
-	<Sidebar />
+	<Sidebar />	
 </section>

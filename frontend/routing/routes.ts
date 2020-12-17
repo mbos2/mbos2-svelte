@@ -1,5 +1,4 @@
 import Home from '@components/main/Home.svelte';
-import About from '@components/main/About.svelte';
 import Projects from '@components/main/Projects.svelte';
 import Blog from '@components/main/Blog.svelte';
 import Contact from '@components/main/Contact.svelte';
@@ -12,26 +11,20 @@ export const mainRoutes = [
     },
     {
         id: 2,
-        url: '/about',
-        name: 'About',
-        component: About
-    },
-    {
-        id: 3,
         url: '/projects',
         name: 'Projects',
         component: Projects
     },
     {
-        id: 4,
+        id: 3,
         url: '/blog',
         name: 'Blog',
         component: Blog
     },
     {
-        id: 5,
+        id: 4,
         url: '/contact',
-        name: 'Contact',
+        name: 'Get in touch',
         component: Contact
     }
 ]

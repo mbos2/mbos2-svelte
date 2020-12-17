@@ -51,6 +51,7 @@
 		-moz-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 		box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 	}
+
 </style>
 <nav class="flex flex-col text-center justify-center items-center h-2/5 space-y-4">
 	{#each mainRoutes as route, i }		

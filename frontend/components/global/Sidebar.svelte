@@ -22,6 +22,12 @@
       buttonContent = '<i class="fas fa-bars"></i>';  
     }
 
+    import { hide } from '@services/hideSidebarOnFallback';
+    let hideValue;
+    const unsubscribe = hide.subscribe(value => {
+      hideValue = value;
+    });
+
 </script>
 <style>  
   @media (max-width: 767px) { 
@@ -41,16 +47,18 @@
       box-shadow: 5px 0px 4px 0px rgba(0,0,0,0.75);
     }
   }
+
   .sidebar {
-    background-color: #293241;
-    /* color: #80CCFF; */
+    background: rgb(128,204,255);
+    background: linear-gradient(45deg, rgba(44,55,71,1) 5%, rgba(128,204,255,1) 6.5%, rgba(44,55,71,1) 8%, rgba(41,50,65,1) 92%, rgba(128,204,255,1) 93.5%, rgba(41,50,65,1) 95%);
   }
   button {      
     font-size:40px;
+    outline: 0;
   }
 </style>
 
-<section class="sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-sidebar-light
+<section class="{hideValue} sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-primary-sidebar_text
             sm:shadow-none
             md:relative md:w-2/6 md:shadow-md md:font-semibold
             lg:w-2/6

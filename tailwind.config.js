@@ -4,10 +4,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      sidebar: {
-        light: "#80CCFF" ,
-        dark: "#293241"
-      },
+      primary: {
+        sidebar_bg: "#293241",
+        sidebar_text: "#80CCFF",
+        main_bg: "#F4EADE",
+        main_text: "#293241",
+        orange: "#ff9500"
+      }  
     }, 
     extend: {},
   },
