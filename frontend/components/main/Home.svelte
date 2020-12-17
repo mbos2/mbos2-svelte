@@ -1,5 +1,5 @@
 <script>
-
+  
 </script>
 <style>
       h1 {
@@ -30,6 +30,8 @@
     }
 </style>
 
-<div>
-    <h1 class="flex text-xl italic md:text-3xl lg:text-4xl my-10 md:my-0 ">"Home is not a place . . . it's a feeling."</h1>
+<div class="">
+    <h1 class="flex text-xl text-primary-dark my-10 italic
+     md:text-3xl md:my-0
+     lg:text-6xl">"Home is not a place . . . it's a feeling."</h1>
 </div>

@@ -1,5 +1,5 @@
 <script>
-
+  
 </script>
 <style>
       h1 {
@@ -31,5 +31,7 @@
 </style>
 
 <div>
-    <h1 class="flex text-xl italic md:text-3xl lg:text-4xl my-10 md:my-0 ">"Goals are dreams with deadlines."</h1>
+    <h1 class="flex text-xl my-10 text-primary-dark italic
+    md:text-3xl md:my-0
+    lg:text-6xl">"Goals are dreams with deadlines."</h1>
 </div>

@@ -31,5 +31,7 @@
 </style>
 
 <div>
-    <h1 class="flex text-xl italic md:text-3xl lg:text-4xl my-10 md:my-0 ">"Blogging is a conversation, not a code."</h1>
+    <h1 class="flex text-xl text-primary-dark my-10 italic
+    md:text-3xl md:my-0
+    lg:text-6xl">"Blogging is a conversation, not a code."</h1>
 </div>

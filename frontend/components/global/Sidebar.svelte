@@ -58,7 +58,7 @@
   }
 </style>
 
-<section class="{hideValue} sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-primary-sidebar_text
+<section class="{hideValue} sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-primary-lightblue
             sm:shadow-none
             md:relative md:w-2/6 md:shadow-md md:font-semibold
             lg:w-2/6

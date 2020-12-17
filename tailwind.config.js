@@ -5,10 +5,9 @@ module.exports = {
   theme: {
     colors: {
       primary: {
-        sidebar_bg: "#293241",
-        sidebar_text: "#80CCFF",
-        main_bg: "#F4EADE",
-        main_text: "#293241",
+        dark: "#293241",
+        lightblue: "#80CCFF",
+        badge: "#F4EADE",        
         orange: "#ff9500"
       }  
     }, 
