@@ -30,8 +30,9 @@
     }
 </style>
 
-<div>
-    <h1 class="flex text-xl text-primary-dark my-10 italic
+<section>
+    <h1 class="flex text-md text-primary-dark my-10 italic
+    sm:text-xl
     md:text-3xl md:my-0
-    lg:text-6xl">"Blogging is a conversation, not a code."</h1>
-</div>
+    lg:text-6xl">"Blogging is a conversation, not a code."</h1>    
+</section>

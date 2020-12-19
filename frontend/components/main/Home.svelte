@@ -1,5 +1,9 @@
 <script>
-  
+  const skills = {
+      css: {
+          progress: 0.50
+      }
+  }
 </script>
 <style>
       h1 {
@@ -28,10 +32,24 @@
         from {width: 0px;}
         to {width:100%}
     }
+
+    .box {
+        border: 2px solid #ff9500;
+        font-family: Papyrus,fantasy; 
+    }
+
 </style>
 
-<div class="">
-    <h1 class="flex text-xl text-primary-dark my-10 italic
-     md:text-3xl md:my-0
-     lg:text-6xl">"Home is not a place . . . it's a feeling."</h1>
-</div>
+<header class="flex flex-row-reverse">
+    <h1 class="flex text-md text-primary-dark my-10 italic
+    sm:text-xl
+    md:text-3xl md:my-0
+    lg:text-6xl">"Home is not a place . . . it's a feeling."</h1>
+</header>
+<main class="">
+    <section class="">
+        <header class="">
+        <h2>ABOUT ME</h2>
+        </header>
+    </section>   
+</main>

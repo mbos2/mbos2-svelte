@@ -30,8 +30,9 @@
     }
 </style>
 
-<div>
-    <h1 class="flex text-xl my-10 text-primary-dark italic
+<section>
+    <h1 class="flex text-md my-10 text-primary-dark italic
+    sm:text-xl
     md:text-3xl md:my-0
     lg:text-6xl">"Goals are dreams with deadlines."</h1>
-</div>
+</section>

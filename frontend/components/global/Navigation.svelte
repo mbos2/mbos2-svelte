@@ -1,8 +1,14 @@
 <script> 
+	import { onMount } from 'svelte';
 	import {mainRoutes} from '@routing/routes';	
 	import { createEventDispatcher } from 'svelte';
 	let lastActiveElement;
 	let activeClass;
+
+	// onMount(async () => {
+	// 	lastActiveElement = document.getElementById('link-1');
+	// 	lastActiveElement.classList.add('active');
+	// });
 
 	const dispatch = createEventDispatcher();
 	function closeNav() {
@@ -45,13 +51,10 @@
 		background-color: #80CCFF;
 		color: #293241;	
 		transition: 0.3s;
-	}
-	.active:focus {
 		-webkit-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 		-moz-box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 		box-shadow: 0px 0px 5px 2px rgba(128,204,255,1);
 	}
-
 </style>
 <nav class="flex flex-col text-center justify-center items-center h-2/5 space-y-4">
 	{#each mainRoutes as route, i }		

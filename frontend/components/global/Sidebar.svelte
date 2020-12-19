@@ -2,6 +2,7 @@
     import Navigation from '@global/Navigation.svelte';
     import ImageComponent from '@global/ImageComponent.svelte';
     import Footer from '@global/Footer.svelte';   
+    import { hide } from '@services/hideSidebarOnFallback';
  
     //Navigation
     let buttonContent = '<i class="fas fa-bars"></i>';  
@@ -22,7 +23,6 @@
       buttonContent = '<i class="fas fa-bars"></i>';  
     }
 
-    import { hide } from '@services/hideSidebarOnFallback';
     let hideValue;
     const unsubscribe = hide.subscribe(value => {
       hideValue = value;
@@ -55,10 +55,11 @@
   button {      
     font-size:40px;
     outline: 0;
+    color: #ff9500;
   }
 </style>
 
-<section class="{hideValue} sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-primary-lightblue
+<aside class="{hideValue} sidebar flex flex-col w-3/5 h-full absolute z-10 overflow-x-hidden text-primary-lightblue
             sm:shadow-none
             md:relative md:w-2/6 md:shadow-md md:font-semibold
             lg:w-2/6
@@ -67,7 +68,7 @@
   <ImageComponent />
   <Navigation on:urlClick={toggleNavigation}/>    
   <Footer /> 
-</section>
-<button class="flex z-20 absolute right-5 top-4 p-1
+</aside>
+<button class="flex z-20 absolute right-4 top-3 p-1
               md:hidden" 
 on:click="{toggleNavigation}">{@html buttonContent}</button>

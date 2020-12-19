@@ -30,8 +30,9 @@
     }
 </style>
 
-<div>
-    <h1 class="flex text-xl text-primary-dark my-10 italic
+<section>
+    <h1 class="flex text-md text-primary-dark my-10 italic
+    sm:text-xl
     md:text-3xl md:my-0
     lg:text-6xl">One message can make a friend.</h1>
-</div>
+</section>
